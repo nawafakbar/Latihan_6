@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="50dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:id="@+id/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selamat Datang di Politeknik Negeri Padang"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:id="@+id/txt1"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limau Manis, Padang Sumbar"
+            android:gravity="center"
+            android:id="@+id/txt2"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manajement Informatika"
+            android:backgroundTint="@color/orange"
+            android:id="@+id/button1"
+            android:layout_below="@+id/txt2"
+            android:layout_marginTop="40dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teknik Komputer"
+            android:backgroundTint="@color/orange"
+            android:id="@+id/button2"
+            android:layout_below="@+id/button1"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Galeri"
+            android:backgroundTint="@color/orange"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
